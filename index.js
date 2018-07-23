@@ -55,6 +55,8 @@ JwPlatformApi.prototype = {
 		});
 
 		var input = queryString.stringify(sortedParams);
+		
+		input = input.replace(/[!'()]/g, escape).replace(/\*/g, "%2A");
 
 		params.api_signature = crypto.createHash('sha1')
 			.update(input + this.config.secret, 'utf8')
