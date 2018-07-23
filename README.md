@@ -1,14 +1,16 @@
 # JW Platform API
 
-This is a simple wrapper for NodeJS around the [JW Platform API](http://apidocs.jwplayer.com/)
+A simple wrapper for NodeJS around the [JW Platform API](http://apidocs.jwplayer.com/)
 to make api calls easier.
+
+This is a forked repository with [the original repository](https://github.com/tmont/jwplatform-api) owned and maintained by [tmont](https://github.com/tmont).  Unfortunately, the code in the original repository has not been maintained for over 4 years.   JW Platform is one of the easiest, most intuitive, platforms to use for distributing streaming video content.  Therefore, Dataclay has decided to maintain a fork of [tmont's](https://github.com/tmont) original contribution.
 
 ## Installation
 
 `npm install jwplatform-api`
 
 ## Usage
-Creating a new jwPlatform API object:
+Creating a new JW Platform API object:
 
 ```javascript
 var jwPlatform = require('jwplatform-api');
